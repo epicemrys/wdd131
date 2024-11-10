@@ -1,0 +1,16 @@
+/* media-query-large.css */
+
+/* Media query for viewports 500px and wider */
+@media screen and (min-width: 500px) {
+    
+    /* Change header background and text color */
+    header {
+        background-color: black;
+        color: white;
+    }
+
+    /* Layout to two columns */
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
