@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sansita", sans-serif; /* Adjusted font */
+}
+
+/* Header Styles */
+header {
+    background-color: #bbb;
+    padding: 20px;
+    text-align: center; /* Center text for mobile */
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Navbar styles */
+nav {
+    background-color: #36454f;
+}
+
+nav #hamburger-button {
+    display: block; /* Show hamburger on mobile */
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Stack menu vertically for mobile */
+    display: none; /* Initially hide the menu */
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: #eee;
+    color: #000;
+}
+
+.active {
+    color: yellow;
+}
+
+/* Main area with figure styles */
+main {
+    max-width: 600px; 
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+}
+
+figure {
+    margin: 1rem 0; /* Spacing between figures */
+}
+
+img {
+    width: 100%; /* Responsive image */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #bbb;
+}

@@ -1,0 +1,33 @@
+/* Larger Views Styles for screens wider than 740px */
+@media (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Horizontal layout for larger screens */
+        justify-content: flex-end; /* Align to the right */
+    }
+
+    nav a {
+        flex: 1 1 100%; /* Make each link take full width in row layout */
+    }
+
+    /* Show menu */
+    #nav-menu {
+        display: flex;
+    }
+
+    nav #hamburger-button {
+        display: none; /* Hide hamburger on larger screens */
+    }
+
+    /* Adjust main area to use multiple columns in larger views */
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    }
+}
