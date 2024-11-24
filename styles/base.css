@@ -1,16 +1,14 @@
 /* Base CSS for homepage layout and styling */
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f9f9f9; /* Light background for better contrast */
 }
 
 /* Header styling */
 header {
-    background-color: #4CAF50;
-    /* Green background */
+    background-color: #3C763D; /* Darker green for better contrast */
     color: white;
     padding: 20px;
     text-align: center;
@@ -18,72 +16,88 @@ header {
 
 /* Navigation styling */
 nav ul {
-    display: flex;
-    /* Flexbox for horizontal menu */
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
+    display: flex; /* Flexbox for horizontal menu */
+    justify-content: center; /* Center the menu items */
+    list-style-type: none; /* No bullets for the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Spacing between menu items */
 }
 
-/* Navigation link styling */
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 16px;
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold font for better visibility */
+    padding: 8px 16px; /* Add some padding for a larger clickable area */
+    border-radius: 5px; /* Round the corners of the links */
+    transition: background-color 0.3s ease; /* Smooth transition for background-color */
 }
 
 nav a:hover {
-    background-color: #45a049;
-    /* Darker green on hover */
-    border-radius: 5px;
+    background-color: #45a049; /* Darker green on hover */
 }
 
 /* Main content styling */
 main {
-    max-width: 800px;
-    /* Limit main content width */
-    margin: 0 auto;
-    /* Center main content */
+    max-width: 800px; /* Limit main content width */
+    margin: 0 auto; /* Center main content */
     padding: 20px;
-    display: grid;
-    /* CSS Grid for card layout */
-    gap: 20px;
+    display: grid; /* CSS Grid for card layout */
+    gap: 20px; /* Space between grid items */
 }
 
 /* Card styling */
 .card {
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    /* Added padding to the card for better spacing */
+    background-color: white; /* Card background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the card for spacing */
+    border-radius: 8px; /* Rounded corners for cards */
 }
 
 /* Styling for responsiveness */
 .card img {
-    width: 100%;
-    /* Make images responsive */
-    max-width: 20%;
-    /* Ensure the images do not exceed their container */
-    height: auto;
-    /* Maintain aspect ratio */
+    width: 100%; /* Make images responsive */
+    max-width: 100%; /* Ensure the images do not exceed their container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Footer styling */
 footer {
-    background-color: #4CAF50;
-    /* Match footer color with header */
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    /* Padding for footer */
+    background-color: #3C763D; /* Match footer color with header */
+    color: white; /* Footer text color */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Padding for footer */
     position: relative;
-    bottom: 0;
-    /* Stick footer to the bottom */
-    width: 100%;
-    /* Full-width footer */
+    bottom: 0; /* Stick footer to the bottom */
+    width: 100%; /* Full-width footer */
+}
+
+/* Accessibility enhancements */
+p,
+h2 {
+    color: #333; /* Darker text for better contrast with background */
+}
+
+nav a:focus,
+nav a:hover {
+    outline: 2px solid #fff; /* Add focus outline for accessibility */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically on small screens */
+        margin: 0; /* Reset margin */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Spacing between menu items vertically */
+    }
+
+    main {
+        padding: 10px; /* Less padding for smaller screens */
+    }
 }
