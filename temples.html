@@ -1,76 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Charles Ukoh">
-    <meta name="description" content="Explore a beautiful collection of temple pictures, showcasing various architectural styles and cultural significance. Discover the history behind each temple and join us on this visual journey.">
+    <meta name="description" content="Explore a beautiful collection of temple pictures.">
     <title>Temple Album</title>
-    <link rel="stylesheet" href="styles/temples.css"> 
-    <link rel="stylesheet" href="styles/temples-large.css"> 
-    <script defer src="scripts/temples.js"></script>
-</head>
-<body>
 
-<header>
-    <h1>Temple Album</h1>
-    <nav>
-        <button id="hamburger-button">&#9776;</button>
-        <ul id="nav-menu">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Old</a></li>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Large</a></li>
-            <li><a href="#">Small</a></li>
-        </ul>
+    <link rel="stylesheet" href="styles/temples.css"> <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles/temples-large.css"> <!-- Optional for larger screens -->
+    <script defer src="scripts/temples.js"></script> <!-- Link to JavaScript file -->
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="hamburger-button">&#9776;</button> <!-- Hamburger button -->
+    <nav id="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Old</a>
+        <a href="#">New</a>
+        <a href="#">Large</a>
+        <a href="#">Small</a>
     </nav>
 </header>
 
-<main>
-    <h2>Home</h2>
-    <figure>
-        <img src="images/logan-temple.jpg" alt="Temple" />
-        <figcaption>Logan</figcaption>
-    </figure>
-    <figure>
-        <img src="images/bountiful-utah-temple.jpg" alt="Temple" />
-        <figcaption>Bountiful Utah</figcaption>
-    </figure>
-    <figure>
-        <img src="images/hartford-temple-house-of-hope.jpg" alt="Temple" />
-        <figcaption>Hartford House of Hope</figcaption>
-    </figure>
-    <figure>
-        <img src="images/laie-hawaii-temple.jpg" alt="Temple" />
-        <figcaption>Laie Hawaii</figcaption>
-    </figure>
-    <figure>
-        <img src="images/manti-utah-temple.jpg" alt="Temple" />
-        <figcaption>Manti Utah</figcaption>
-    </figure>
-    <figure>
-        <img src="images/san-diego-california-temple.jpg" alt="Temple" />
-        <figcaption>San Diego</figcaption>
-    </figure>
-    <figure>
-        <img src="images/st-george-utah-temple.jpg" alt="Temple" />
-        <figcaption>St George Utah</figcaption>
-    </figure>
-    <figure>
-        <img src="images/st-louis-missouri-temple.jpg" alt="Temple" />
-        <figcaption>St. Louis Missouri</figcaption>
-    </figure>
-    <figure>
-        <img src="images/washington-dc-temple.jpg" alt="Temple" />
-        <figcaption>Washington DC</figcaption>
-    </figure>
+    <main>
+        <h2 id="home">Home</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="images/logan-temple.jpg" alt="Temple">
+                <p>Logan</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/bountiful-utah-temple.jpg" alt="Temple">
+                <p>Bountiful Utah</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/hartford-temple-house-of-hope.jpg" alt="Temple">
+                <p>Hartford House of Hope</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/laie-hawaii-temple.jpg" alt="Temple">
+                <p>Laie Hawaii</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/manti-utah-temple.jpg" alt="Temple">
+                <p>Manti Utah</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/san-diego-california-temple.jpg" alt="Temple">
+                <p>San Diego</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/st-george-utah-temple.jpg" alt="Temple">
+                <p>St George Utah</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/st-louis-missouri-temple.jpg" alt="Temple">
+                <p>St. Louis Missouri</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/washington-dc-temple.jpg" alt="Temple">
+                <p>Washington DC</p>
+            </div>
+        </div>
+    </main>
 
-</main>
-
-<footer>
-    <p>&copy; <span id="current-year"></span> 🌸 Charles Ukoh 🌼 Nigeria</p>
-    <p>Last modified: <span id="last-modified"></span></p>
-</footer>
-
+    <footer>
+        <p>© <span id="current-year"></span> ⚛️ Charles Ukoh ⚛️ Lagos, Nigeria</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
 </body>
+
 </html>
