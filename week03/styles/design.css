@@ -1,0 +1,47 @@
+body {
+    font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.banner {
+    padding: 1rem;
+    background-color: #eee;
+}
+
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for the main content */
+}
+
+h2 {
+    color: navy;
+    text-align: left; /* Change to left align */
+    grid-column: span 2; /* Span across both columns */
+}
+
+article p {
+    text-align: justify;
+}
+
+.callout {
+    color: #fff; /* Ensure text is white for better contrast */
+    background-color: #47cf73; /* Keep this color, but ensure contrast */
+    padding: 1rem; /* Fix padding issues */
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: smaller;
+    text-align: left; /* Move footer content to the left */
+}
