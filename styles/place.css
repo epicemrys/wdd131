@@ -1,8 +1,8 @@
 :root {
-    --main-color: #008000; /* Green color for Nigeria */
-    --bg-color: #f2f2f2;
-    --text-color: #333;
-    --header-footer-bg: #d70038;
+    --main-color: #00704a; /* Dark green color for Nigeria */
+    --secondary-color: #d70038; /* Highlight color for headers and footer */
+    --background-color: #f2f2f2; /* Light background color */
+    --text-color: #333; /* Dark text color */
 }
 
 body {
@@ -10,11 +10,11 @@ body {
     margin: 0;
     padding: 0;
     color: var(--text-color);
-    background-color: var(--bg-color);
+    background-color: var(--background-color);
 }
 
 header {
-    background-color: var(--header-footer-bg);
+    background-color: var(--secondary-color);
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -25,12 +25,19 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+}
+
+#hero {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
 }
 
 #hero img {
     width: 100%;
     height: auto;
-    max-width: 800px;
+    object-fit: cover;
 }
 
 #weather-info, #weather {
@@ -39,10 +46,13 @@ main {
     margin: 20px;
     text-align: center;
     border: 1px solid var(--main-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px; /* Maintain a minimum width for better layout */
 }
 
 footer {
-    background-color: var(--header-footer-bg);
+    background-color: var(--secondary-color);
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -51,7 +61,7 @@ footer {
 
 .weather-icon {
     font-size: 1.5em;
-    display: none; /* Hidden on Mobile */
+    display: none; /* Initially hidden for mobile view */
 }
 
 @media (min-width: 600px) {
@@ -63,5 +73,9 @@ footer {
 @media (min-width: 900px) {
     body {
         background-color: #eef;
+    }
+    
+    #weather-info, #weather {
+        width: 60%; /* Change the width on larger screens for a better layout */
     }
 }
