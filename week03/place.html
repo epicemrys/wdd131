@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria Weather Info</title>
+    <link rel="stylesheet" href="place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <picture>
+              <source srcset="nigeria-landmark.jpg" media="(max-width: 600px)">
+              <source srcset="nigeria-landmark.jpg" media="(max-width: 900px)">
+              <img src="nigeria-landmark.jpg" alt="A beautiful view of Nigeria" loading="lazy">
+            </picture>
+        </section>
+
+        <section id="weather-info">
+            <h2>Data</h2>
+            <p>Area: 923,768 km²</p>
+            <p>Population: Approximately 212 million</p>
+            <p>Capital: Abuja</p>
+            <p>Languages: Languages: English, Hausa, Yoruba, Igbo</p>
+            <p>Currency: Nigerian naira (NGN)</p>
+            <p>Time Zone: UTC/GMT +1 Hours</p>
+            <p>Calling Code: +234</p>
+            <p>Internet TLD: .ng</p>
+        </section>
+
+        <section id="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <p>Temperature: <span id="temperature">10°C</span></p>
+            <p>Conditions: Partly Cloudy</p>
+            <p>Wind: <span id="wind-speed">5</span> km/h</p>
+            <p>Wind Chill: <span id="wind-chill">15.8°C</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span>⚛️ Charles Ukoh ⚛️ Nigeria</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+    <script src="place.js" defer></script>
+</body>
+</html>

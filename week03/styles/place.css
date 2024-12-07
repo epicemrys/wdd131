@@ -1,0 +1,67 @@
+:root {
+    --main-color: #008000; /* Green color for Nigeria */
+    --bg-color: #f2f2f2;
+    --text-color: #333;
+    --header-footer-bg: #d70038;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header {
+    background-color: var(--header-footer-bg);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
+#weather-info, #weather {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid var(--main-color);
+}
+
+footer {
+    background-color: var(--header-footer-bg);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.weather-icon {
+    font-size: 1.5em;
+    display: none; /* Hidden on Mobile */
+}
+
+@media (min-width: 600px) {
+    .weather-icon {
+        display: inline; /* Show on larger screens */
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        background-color: #eef;
+    }
+}
