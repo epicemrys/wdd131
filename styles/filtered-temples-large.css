@@ -21,7 +21,7 @@
     }
 
     .grid {
-        grid-template-columns: repeat((3, 1fr)); /* Responsive grid */
+        grid-template-columns: repeat(3, 1fr); /* Responsive grid */
         padding: 20px; /* Add padding to the grid */
     }
 
