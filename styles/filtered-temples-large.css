@@ -18,7 +18,6 @@
     /* Adjust main area to use multiple columns in larger views */
     main {
         display: grid;
-        grid-template-columns: repeat((3, 1fr)); /* Responsive grid */
     }
 
     .grid {
