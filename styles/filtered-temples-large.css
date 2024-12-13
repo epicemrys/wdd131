@@ -1,0 +1,63 @@
+/* Larger Views Styles for screens wider than 740px */
+@media (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav a {
+        flex: 1 1 auto; /* Make each link take full width in row layout */
+        padding: 0.5rem 15px;
+    }
+
+    /* Adjust main area to use multiple columns in larger views */
+    main {
+        display: grid;
+        grid-template-columns: repeat((3, 1fr)); /* Responsive grid */
+    }
+
+    .grid {
+        grid-template-columns: repeat((3, 1fr)); /* Responsive grid */
+        padding: 20px; /* Add padding to the grid */
+    }
+
+    /* Style for each grid item */
+    .grid-item {
+        border: 2px solid #ccc; /* Light gray border for grid items */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add shadow for depth */
+        overflow: hidden; /* Ensure content does not overflow */
+        transition: transform 0.3s; /* Transition effect */
+    }
+
+    .grid-item:hover {
+        transform: scale(1.05); /* Slight zoom on hover for emphasis */
+    }
+
+    /* Style images in grid items for larger screens */
+    .grid-item img {
+        width: 100%;
+        height: auto; /* Automatically maintain aspect ratio */
+        max-height: 250px; /* Limit the max height for larger screens */
+        object-fit: cover; /* Cover the area without losing aspect ratio */
+    }
+
+    /* Style captions under images */
+    .grid-item p {
+        margin-top: 10px;
+        font-size: 1.1em; /* Slightly larger font size for captions */
+        color: #551a8b; /* Consistent caption color */
+        text-align: center; /* Center captions */
+    }
+
+    /* Adjust footer styles if needed */
+    footer {
+        padding: 15px 0; /* More padding for footer on larger screens */
+    }
+}
+

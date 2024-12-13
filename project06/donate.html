@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charles Ukoh">
+    <meta name="description" content="Support Giverneur in our mission to uplift communities by donating today. Your contributions help fund essential projects that provide food, education, and healthcare assistance to those in need. Discover how you can make a positive impact through your generosity.">
+    <title>The Joy Of Giving - Donate</title>
+    <link rel="stylesheet" href="styles/giverneur.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/giverneur-logo.png" alt="Giverneur Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="giverneur.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Donate to Giverneur</h1>
+        <p>Your support helps us make a difference in the lives of many.</p>
+        <form id="donation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="amount">Donation Amount ($):</label>
+            <input type="number" id="amount" required min="1">
+            <label for="frequency">Donation Frequency:</label>
+            <select id="frequency">
+                <option value="one-time">One-Time</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+            </select>
+            <button type="submit">Donate Now</button>
+        </form>
+        <section class="donation-info">
+            <h2>Why Your Donation Matters</h2>
+            <p>Your contributions play a crucial role in supporting our programs. Whether it's providing meals, educational resources, or healthcare assistance, every dollar goes towards helping someone in need.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Giverneur. All rights reserved.</p>
+    </footer>
+    <script src="scripts/giverneur.js"></script>
+</body>
+</html>

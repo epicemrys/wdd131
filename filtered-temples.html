@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charles Ukoh">
+    <meta name="description" content="Explore a beautiful collection of temple pictures.">
+    <title>Temple Album</title>
+
+    <link rel="stylesheet" href="styles/filtered-temples.css"> <!-- Link to CSS-->
+    <link rel="stylesheet" href="styles/filtered-temples-large.css"> <!--For larger screens -->
+    <script defer src="scripts/filtered-temples.js"></script> <!-- Link to JavaScrip -->
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="hamburger-button">&#9776;</button> <!-- Hamburger button -->
+        <nav id="nav-links">
+            <a href="#" data-filter="all">Home</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home-section">
+            <h2 id="home">Home</h2>
+        </section>
+        <section id="temple-section">
+            <div class="grid" id="temple-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> ⚛️ Charles Ukoh ⚛️ Lagos, Nigeria</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>

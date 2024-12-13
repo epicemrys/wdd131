@@ -1,0 +1,228 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #355c7d; /* Main color for the header */
+    padding: 10px 20px;
+}
+
+header .logo img {
+    height: 50px; /* Control the size of the logo */
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Add space between menu items */
+}
+
+nav ul li a {
+    color: #fff; /* Menu text color */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background: #6c5b7f; /* Background color change on hover */
+    border-radius: 5px;
+}
+
+/* Main content styles */
+main {
+    max-width: 800px; /* Maximum width of the content */
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff; /* Background for the main content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Rounded corners */
+}
+
+h1 {
+    color: #355c7d; /* Main heading color */
+}
+
+h2 {
+    color: #6c5b7f; /* Subheading color */
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 20px; /* Space above the form */
+}
+
+form label {
+    display: block; /* Make labels block elements */
+    margin: 10px 0 5px;
+}
+
+form input, form select, form button {
+    width: 100%; /* Full width elements */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Rounded corners */
+}
+
+form button {
+    background: #355c7d; /* Button background */
+    color: #fff; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth transition for hover effect */
+}
+
+form button:hover {
+    background: #6c5b7f; /* Change button color on hover */
+}
+
+/* Accordion styles */
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion .item {
+    margin-bottom: 10px; /* Space between accordion items */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.accordion h3 {
+    background: #355c7d; /* Background for accordion headers */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px;
+    margin: 0; /* No margin */
+}
+
+.accordion .content {
+    padding: 10px;
+    display: none; /* Initially hide accordion content */
+}
+
+.accordion .item.active .content {
+    display: block; /* Show content when active */
+}
+
+/* Featured Projects Section */
+#featured-projects {
+    margin: 20px 0;
+    padding: 20px;
+    background: #eaecee; /* Light grey background for contrast */
+    border-radius: 8px;
+}
+
+#featured-projects h2 {
+    color: #355c7d; /* Match main heading color */
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+/* Individual project styles */
+.project {
+    background: #fff; /* White background for each project */
+    border: 1px solid #ddd; /* Light border around projects */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px;
+    margin-bottom: 20px; /* Space between projects */
+    transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.project:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.project h3 {
+    color: #355c7d; /* Main project heading color */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.project img {
+    width: 100%; /* Responsive image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.project p {
+    margin: 10px 0; /* Space above and below the paragraph */
+}
+
+.project button {
+    background: #355c7d; /* Button background */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth transition on hover */
+}
+
+.project button:hover {
+    background: #6c5b7f; /* Change button color on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #355c7d; /* Match footer with header */
+    color: #fff;
+    position: relative; /* Positioned at the bottom of the page */
+    bottom: 0;
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Space above */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Stack header elements on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%; /* Full width for menu */
+    }
+
+    nav ul li {
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Space between vertical menu items */
+    }
+
+    form input, form select, form button {
+        padding: 15px; /* Increase padding for better touch targets on mobile */
+    }
+
+    header .logo img {
+        height: 40px; /* Reduce logo size on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Adjust heading size for mobile screens */
+    }
+    
+    h2 {
+        font-size: 1.5rem; /* Adjust subheading size for mobile screens */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Slightly smaller font in the footer */
+    }
+}

@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #2e147c;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+nav {
+    display: none; /* Initially hidden */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 15px;
+    margin: 0;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    text-decoration: underline double;
+}
+
+/* Active state of navigation menu */
+nav.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #2e147c;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    z-index: 1000;
+}
+
+nav.active a {
+    padding: 10px 0; /* Add padding for each link in the menu */
+}
+
+/* Hamburger button styles */
+#hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 2em;
+    color: #2e147c;
+}
+
+/* Add styles for the home section */
+#home-section {
+    text-align: center; /* Center the home heading */
+    margin: 10px 0; /* Add space around the home section */
+}
+
+/* H2 specific styles */
+#home {
+    font-size: 2em; /* Customize font size if necessary */
+    color: #2e147c; /* Use your intended color */
+}
+
+/* Adjustments for the temple section */
+#temple-section {
+    padding: 5px; /* Optional padding for the temple section */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 5px;
+}
+
+/* Style for each grid item */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd; /* Add border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Inner spacing */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Simple zoom on hover */
+}
+
+/* Style images in grid items */
+.grid-item img {
+    width: 100%;
+    height: auto; /* Automatically fit height */
+    max-height: 200px; /* Limit height */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Style captions under images */
+.grid-item p {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #551a8b;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2e147c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Mobile View */
+@media screen and (max-width: 740px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #2e147c;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: none;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    #hamburger-button {
+        display: block;
+    }
+
+    /* Style hamburger button when menu is active */
+    #hamburger-button.active {
+        color: #ffcc00; /* Change color when menu is active */
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
