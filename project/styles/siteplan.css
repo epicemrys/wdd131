@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f9fc; /* Light gray background for a softer look */
+    color: #333333; /* Dark text color */
+    margin: 0;
+}
+
+header {
+    background-color: #4CAF50; /* Green background for header */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Center the header text */
+}
+
+main {
+    background-color: #ffffff; /* White background for main content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 40px; /* Padding around the content */
+    max-width: 800px; /* Max width for content readability */
+    margin: 20px auto; /* Center the main content horizontally with space above and below */
+}
+
+h1 {
+    font-family: 'Georgia', serif; /* Font for main heading */
+    font-size: 2.5em;
+    margin-bottom: 0; /* No bottom margin for h1 */
+}
+
+h2 {
+    font-family: 'Georgia', serif; /* Font for subheadings */
+    color: #4CAF50; /* Green color for subheadings */
+    margin-top: 20px; /* Spacing above h2 */
+}
+
+p {
+    margin: 15px 0; /* More spacing for paragraphs */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Indentation for list */
+}
+
+ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+footer {
+    text-align: center; /* Center text in footer */
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #f0f0f0; /* Light gray background for footer */
+    border-radius: 0 0 8px 8px; /* Rounded corners at the bottom */
+}
+
+/* Link Styles */
+a {
+    color: #4CAF50; /* Green for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for accessibility */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Make header smaller on mobile */
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    main {
+        padding: 20px; /* Reduced padding on mobile */
+    }
+}
