@@ -20,8 +20,14 @@ header {
     padding: 10px 20px;
 }
 
+header .logo {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
 header .logo img {
-    height: 50px; /* Control the size of the logo */
+    height: 100px !important; 
+    width: auto;
 }
 
 nav ul {
@@ -189,25 +195,42 @@ footer {
     margin-top: 20px; /* Space above */
 }
 
-/* Mobile Responsiveness */
+/* Adjust header styles for mobile view */
 @media (max-width: 600px) {
     header {
+        justify-content: space-between; /* Keep space on sides */
         flex-direction: column; /* Stack header elements on small screens */
         align-items: flex-start; /* Align items to the start */
     }
-    
+
+    header .logo img {
+        height: 60px;
+        width: auto;
+    }
+
     nav ul {
-        flex-direction: column; /* Stack menu items vertically */
-        width: 100%; /* Full width for menu */
+        flex-direction: column; /* Stack the items */
+        padding: 10px 0; /* Padding for the list */
+        display: flex;
+        width: 100%;
     }
 
     nav ul li {
-        margin-left: 0; /* Remove left margin */
-        margin-bottom: 10px; /* Space between vertical menu items */
+        margin-bottom: 10px; /* Space between items */
+        margin-left: 0;
     }
 
+    form {
+        width: 100%; /* Ensure the form takes up the full width of its parent */
+        margin-top: 20px; /* Optional spacing above the form */
+    }
+    
     form input, form select, form button {
-        padding: 15px; /* Increase padding for better touch targets on mobile */
+        width: 100%; /* Full width */
+        padding: 10px; /* Increase padding for better touch targets on mobile */
+        margin-bottom: 10px; /* Space between form elements */
+        border: 1px solid #ddd; /* Light border for input */
+        border-radius: 5px; /* Rounded corners */
     }
 
     header .logo img {
