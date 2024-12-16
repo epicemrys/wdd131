@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+    <main>
+        <p>Your review has been submitted successfully.</p>
+        <p>Total Reviews Submitted: <span id="reviewCount"></span></p>
+        <p><a href="form.html">Back to Review Form</a></p>
+    </main>
+    <footer>
+        <p>© <span id="current-year"></span> ⚛️ Charles Ukoh ⚛️ Lagos, Nigeria</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+
+    <script>
+        const reviewCount = localStorage.getItem('reviewCount') || 0;
+        document.getElementById('reviewCount').textContent = reviewCount;
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.getElementById('last-modified').textContent = document.lastModified;
+    </script>
+</body>
+</html>
