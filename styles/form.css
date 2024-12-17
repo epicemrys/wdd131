@@ -68,7 +68,13 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 95%;
+    flex-wrap: wrap; 
+    border: 2px solid #ccc; /* Add a solid border around the overall rating */
+    border-radius: 8px; /* Rounded corners for a smoother look */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    padding: 10px; /* Padding inside the border for spacing */
+    margin-top: 10px;
 }
 
 .star {
@@ -117,11 +123,17 @@ legend {
     color: #2A577B;
 }
 
-
-
 footer {
     background-color: #2A577B;
     color: #fff;
     text-align: center;
     padding: 5px 0;
 }
+
+@media (max-width: 600px) {
+    .overall-rating {
+        flex-direction: column; /* Stack stars vertically on small screens */
+        align-items: center; /* Center align stars */
+        width: 95%; /* 100% width to ensure fitting */
+    }
+}    
